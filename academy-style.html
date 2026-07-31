@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>האקדמיה של עדי רדמי | שיטת ה-5% – לימודי מסחר בשוק ההון</title>
+<meta name="description" content="האקדמיה של עדי רדמי — לימודי מסחר והשקעות בשוק ההון האמריקאי. קורס מסחר באופציות חצי-אוטומטי וקבוצת איתותים לחוזים עתידיים, בשיטת ה-5%.">
+<meta name="theme-color" content="#2f3f90">
+<link rel="canonical" href="https://adiradmytrade.com/">
+
+<link rel="icon" type="image/jpeg" href="./assets/logo.jpg">
+<link rel="apple-touch-icon" href="./assets/logo.jpg">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="האקדמיה של עדי רדמי">
+<meta property="og:title" content="האקדמיה של עדי רדמי | שיטת ה-5%">
+<meta property="og:description" content="לימודי מסחר והשקעות בשוק ההון האמריקאי — קורס אופציות חצי-אוטומטי וקבוצת איתותים לחוזים עתידיים.">
+<meta property="og:url" content="https://adiradmytrade.com/">
+<meta property="og:image" content="https://adiradmytrade.com/assets/logo.jpg">
+<meta property="og:locale" content="he_IL">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://adiradmytrade.com/assets/logo.jpg">
+
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ===== DESIGN TOKENS (Academy blue-on-white) ===== */
+:root {
+  --blue:        #2f3f90;   /* primary — sampled from academy banner */
+  --blue-600:    #3b4da8;
+  --blue-500:    #4f61bd;
+  --blue-dark:   #232f6b;
+  --blue-darker: #1a2350;
+  --blue-tint:   #eef1fb;
+  --blue-tint-2: #e3e8f7;
+  --red:         #d91f26;   /* accent */
+  --red-dark:    #b81820;
+
+  --ink:      #1a2338;
+  --muted:    #5a6478;
+  --faint:    #8a92a6;
+  --line:     #e4e8f2;
+  --bg:       #ffffff;
+  --surface:  #f5f7fc;
+  --white:    #ffffff;
+
+  --font: 'Heebo', 'Segoe UI', Arial, sans-serif;
+
+  --text-xs:   clamp(0.75rem, 0.7rem + 0.2vw, 0.85rem);
+  --text-sm:   clamp(0.875rem, 0.82rem + 0.3vw, 0.95rem);
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.075rem);
+  --text-lg:   clamp(1.125rem, 1rem + 0.6vw, 1.4rem);
+  --text-xl:   clamp(1.4rem, 1.15rem + 1.1vw, 2.05rem);
+  --text-2xl:  clamp(1.9rem, 1.3rem + 2.4vw, 3rem);
+  --text-3xl:  clamp(2.3rem, 1.3rem + 3.6vw, 4rem);
+
+  --sp-1:.25rem; --sp-2:.5rem; --sp-3:.75rem; --sp-4:1rem; --sp-5:1.25rem;
+  --sp-6:1.5rem; --sp-8:2rem; --sp-10:2.5rem; --sp-12:3rem; --sp-16:4rem;
+  --sp-20:5rem; --sp-24:6rem;
+
+  --r-sm:.375rem; --r-md:.5rem; --r-lg:.75rem; --r-xl:1rem; --r-2xl:1.5rem; --r-full:9999px;
+
+  --shadow-sm: 0 1px 3px rgba(26,35,80,.08);
+  --shadow-md: 0 6px 24px rgba(26,35,80,.10);
+  --shadow-lg: 0 16px 48px rgba(26,35,80,.16);
+  --transition: 200ms cubic-bezier(.16,1,.3,1);
+  --content: 1200px;
+}
+
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { scroll-behavior:smooth; scroll-padding-top:120px; -webkit-font-smoothing:antialiased; }
+body { font-family:var(--font); font-size:var(--text-base); color:var(--ink); background:var(--bg); line-height:1.7; overflow-x:hidden; }
+img,svg { display:block; max-width:100%; height:auto; }
+ul { list-style:none; }
+a { color:inherit; text-decoration:none; transition:color var(--transition); }
+button { cursor:pointer; border:none; background:none; font:inherit; }
+h1,h2,h3,h4 { line-height:1.15; font-weight:800; text-wrap:balance; }
+p { text-wrap:pretty; }
+
+.container { max-width:var(--content); margin-inline:auto; padding-inline:var(--sp-6); }
+
+/* ===== ACCESSIBILITY ===== */
+:focus-visible { outline:3px solid var(--blue-500); outline-offset:3px; border-radius:var(--r-sm); }
+.skip-link { position:absolute; right:-9999px; top:8px; z-index:300; background:var(--blue); color:#fff; padding:.5rem 1.25rem; border-radius:var(--r-full); font-weight:700; }
+.skip-link:focus { right:1rem; }
+
+/* ===== BUTTONS ===== */
+.btn { display:inline-flex; align-items:center; justify-content:center; gap:var(--sp-2); padding:.85rem 1.75rem; border-radius:var(--r-full); font-size:var(--text-sm); font-weight:700; transition:all var(--transition); white-space:nowrap; }
+.btn--primary { background:var(--blue); color:#fff; box-shadow:0 6px 18px rgba(47,63,144,.28); }
+.btn--primary:hover { background:var(--blue-dark); transform:translateY(-2px); box-shadow:0 10px 28px rgba(47,63,144,.38); }
+.btn--red { background:var(--red); color:#fff; box-shadow:0 6px 18px rgba(217,31,38,.25); }
+.btn--red:hover { background:var(--red-dark); transform:translateY(-2px); }
+.btn--ghost { background:#fff; color:var(--blue); border:1.5px solid var(--line); }
+.btn--ghost:hover { border-color:var(--blue); background:var(--blue-tint); }
+.btn--light { background:rgba(255,255,255,.12); color:#fff; border:1.5px solid rgba(255,255,255,.35); }
+.btn--light:hover { background:rgba(255,255,255,.2); }
+.btn--wa { background:#25D366; color:#fff; }
+.btn--wa:hover { background:#1ebe5d; transform:translateY(-2px); }
+
+/* ===== TOP BAR ===== */
+.topbar { background:var(--blue-darker); color:#cbd3ea; font-size:var(--text-xs); }
+.topbar__inner { max-width:var(--content); margin-inline:auto; padding:.4rem var(--sp-6); display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); }
+.topbar a { color:#fff; font-weight:600; }
+.topbar__tag { display:flex; align-items:center; gap:var(--sp-2); }
+.topbar__tag::before { content:''; width:7px; height:7px; border-radius:50%; background:#38d39f; }
+
+/* ===== NAV ===== */
+.nav { position:sticky; top:0; z-index:100; background:rgba(255,255,255,.94); backdrop-filter:blur(12px); border-bottom:1px solid var(--line); }
+.nav__inner { max-width:var(--content); margin-inline:auto; padding:0 var(--sp-6); height:72px; display:flex; align-items:center; justify-content:space-between; }
+.nav__logo { display:flex; align-items:center; gap:var(--sp-3); }
+.nav__logo img { height:46px; width:auto; border-radius:var(--r-md); }
+.nav__logo-name { font-size:var(--text-lg); font-weight:800; color:var(--blue); line-height:1.05; }
+.nav__logo-sub { font-size:var(--text-xs); color:var(--faint); letter-spacing:.1em; text-transform:uppercase; }
+.nav__links { display:flex; align-items:center; gap:var(--sp-6); }
+.nav__links a { font-size:var(--text-sm); font-weight:600; color:var(--muted); }
+.nav__links a:hover { color:var(--blue); }
+.nav__hamburger { display:none; flex-direction:column; gap:5px; padding:.5rem; }
+.nav__hamburger span { width:24px; height:2px; background:var(--blue); border-radius:2px; }
+
+.mobile-menu { display:none; position:fixed; top:72px; inset-inline:0; background:#fff; border-bottom:1px solid var(--line); padding:var(--sp-5); flex-direction:column; gap:var(--sp-2); z-index:99; box-shadow:var(--shadow-md); }
+.mobile-menu.is-open { display:flex; }
+.mobile-menu a { padding:.75rem 0; border-bottom:1px solid var(--line); color:var(--ink); font-weight:600; }
+.mobile-menu a:last-child { border-bottom:none; }
+
+/* ===== HERO ===== */
+.hero { background:linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 60%, var(--blue-darker) 100%); color:#fff; position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0; background:
+  radial-gradient(ellipse 50% 60% at 85% 15%, rgba(255,255,255,.10) 0%, transparent 55%),
+  radial-gradient(ellipse 40% 50% at 10% 90%, rgba(79,97,189,.35) 0%, transparent 60%);
+  pointer-events:none; }
+.hero__grid-lines { position:absolute; inset:0; background-image:
+  linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);
+  background-size:52px 52px; mask-image:linear-gradient(180deg,#000,transparent 80%); pointer-events:none; }
+.hero__content { position:relative; z-index:1; display:grid; grid-template-columns:1.1fr .9fr; gap:var(--sp-16); align-items:center; padding-block:clamp(var(--sp-16),8vw,var(--sp-24)); }
+.hero__badge { display:inline-flex; align-items:center; gap:var(--sp-2); padding:.4rem 1rem; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.28); border-radius:var(--r-full); font-size:var(--text-xs); font-weight:700; letter-spacing:.06em; margin-bottom:var(--sp-6); }
+.hero__badge::before { content:''; width:6px; height:6px; border-radius:50%; background:#38d39f; animation:pulse 2s infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:.5;transform:scale(1.3);} }
+.hero__title { font-size:var(--text-3xl); font-weight:900; margin-bottom:var(--sp-5); }
+.hero__title span { color:#9fb4ff; }
+.hero__desc { font-size:var(--text-lg); color:#cdd6f0; max-width:48ch; margin-bottom:var(--sp-8); font-weight:300; }
+.hero__actions { display:flex; gap:var(--sp-4); flex-wrap:wrap; }
+.hero__stats { display:flex; gap:var(--sp-8); margin-top:var(--sp-10); padding-top:var(--sp-8); border-top:1px solid rgba(255,255,255,.15); }
+.hero__stat-num { font-size:var(--text-xl); font-weight:800; color:#fff; display:block; line-height:1; }
+.hero__stat-label { font-size:var(--text-xs); color:#a9b4d6; margin-top:var(--sp-1); }
+
+.hero__card { background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.18); border-radius:var(--r-2xl); padding:var(--sp-8); backdrop-filter:blur(6px); box-shadow:var(--shadow-lg); }
+.hero__card-logo { width:96px; height:96px; border-radius:var(--r-xl); object-fit:contain; background:#fff; padding:8px; margin-bottom:var(--sp-5); }
+.hero__card h3 { font-size:var(--text-lg); margin-bottom:var(--sp-3); }
+.hero__card-list { display:flex; flex-direction:column; gap:var(--sp-3); }
+.hero__card-item { display:flex; align-items:center; gap:var(--sp-3); font-size:var(--text-sm); color:#dbe2f5; }
+.hero__card-item svg { width:20px; height:20px; stroke:#38d39f; flex-shrink:0; }
+
+/* ===== SECTION ===== */
+.section { padding-block:clamp(var(--sp-16),7vw,var(--sp-24)); }
+.section--tint { background:var(--surface); }
+.section__head { text-align:center; max-width:640px; margin:0 auto var(--sp-12); }
+.eyebrow { display:inline-flex; align-items:center; gap:var(--sp-2); font-size:var(--text-xs); font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:var(--blue); margin-bottom:var(--sp-3); }
+.eyebrow::before { content:''; width:22px; height:2px; border-radius:2px; background:var(--red); }
+.section__title { font-size:var(--text-2xl); font-weight:900; color:var(--ink); margin-bottom:var(--sp-3); }
+.section__title span { color:var(--blue); }
+.section__desc { font-size:var(--text-base); color:var(--muted); }
+
+/* ===== COURSES ===== */
+.courses__grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:var(--sp-8); }
+.course-card { background:#fff; border:1px solid var(--line); border-radius:var(--r-xl); overflow:hidden; display:flex; flex-direction:column; box-shadow:var(--shadow-sm); transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition); }
+.course-card:hover { transform:translateY(-6px); box-shadow:var(--shadow-lg); border-color:var(--blue-tint-2); }
+.course-card__media { position:relative; aspect-ratio:16/9; background:linear-gradient(135deg,var(--blue) 0%,var(--blue-dark) 100%); display:flex; align-items:center; justify-content:center; overflow:hidden; }
+.course-card__media::after { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px); background-size:28px 28px; }
+.course-card__media svg { width:64px; height:64px; stroke:rgba(255,255,255,.92); stroke-width:1.4; position:relative; z-index:1; }
+.course-card__chip { position:absolute; top:var(--sp-3); inset-inline-start:var(--sp-3); z-index:2; background:rgba(255,255,255,.95); color:var(--blue); font-size:var(--text-xs); font-weight:700; padding:.3rem .8rem; border-radius:var(--r-full); }
+.course-card__chip--live { background:var(--red); color:#fff; }
+.course-card__body { padding:var(--sp-6); display:flex; flex-direction:column; flex:1; }
+.course-card__title { font-size:var(--text-lg); font-weight:800; margin-bottom:var(--sp-2); }
+.course-card__desc { font-size:var(--text-sm); color:var(--muted); line-height:1.7; margin-bottom:var(--sp-5); }
+.course-card__features { display:flex; flex-direction:column; gap:var(--sp-2); margin-bottom:var(--sp-6); }
+.course-card__feature { display:flex; align-items:center; gap:var(--sp-2); font-size:var(--text-sm); color:var(--muted); }
+.course-card__feature svg { width:16px; height:16px; stroke:var(--blue); flex-shrink:0; }
+.course-card__cta { margin-top:auto; width:100%; }
+
+/* ===== METHOD ===== */
+.method__grid { display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-16); align-items:center; }
+.method__points { display:flex; flex-direction:column; gap:var(--sp-5); margin-top:var(--sp-6); }
+.method__point { display:flex; gap:var(--sp-4); align-items:flex-start; }
+.method__point-icon { flex-shrink:0; width:44px; height:44px; border-radius:var(--r-lg); background:var(--blue-tint); display:flex; align-items:center; justify-content:center; }
+.method__point-icon svg { width:22px; height:22px; stroke:var(--blue); }
+.method__point strong { display:block; margin-bottom:2px; }
+.method__point span { color:var(--muted); font-size:var(--text-sm); }
+.method__visual { background:linear-gradient(135deg,var(--blue) 0%,var(--blue-darker) 100%); border-radius:var(--r-2xl); padding:var(--sp-12); text-align:center; color:#fff; box-shadow:var(--shadow-lg); position:relative; overflow:hidden; }
+.method__visual::before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 30% 20%,rgba(255,255,255,.12),transparent 55%); }
+.method__num { font-size:clamp(4.5rem,11vw,8rem); font-weight:900; line-height:.9; position:relative; }
+.method__num-label { color:#cdd6f0; margin-top:var(--sp-3); position:relative; }
+.method__badges { display:flex; flex-direction:column; gap:var(--sp-3); margin-top:var(--sp-8); position:relative; }
+.method__badge { display:flex; justify-content:space-between; padding:.75rem 1rem; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.15); border-radius:var(--r-md); font-size:var(--text-sm); }
+.method__badge b { color:#9fb4ff; }
+
+/* ===== WHY ===== */
+.why__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-6); }
+.why-card { background:#fff; border:1px solid var(--line); border-radius:var(--r-xl); padding:var(--sp-8); box-shadow:var(--shadow-sm); transition:transform var(--transition),box-shadow var(--transition); }
+.why-card:hover { transform:translateY(-4px); box-shadow:var(--shadow-md); }
+.why-card__icon { width:48px; height:48px; border-radius:var(--r-lg); background:var(--blue); display:flex; align-items:center; justify-content:center; margin-bottom:var(--sp-4); }
+.why-card__icon svg { width:24px; height:24px; stroke:#fff; }
+.why-card h3 { font-size:var(--text-lg); margin-bottom:var(--sp-2); color:var(--blue); }
+.why-card p { font-size:var(--text-sm); color:var(--muted); }
+
+/* ===== TESTIMONIALS ===== */
+.tst__grid { display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-6); }
+.tst-card { background:#fff; border:1px solid var(--line); border-radius:var(--r-xl); padding:var(--sp-6); box-shadow:var(--shadow-sm); }
+.tst-card__stars { color:#f5b400; margin-bottom:var(--sp-3); letter-spacing:2px; }
+.tst-card__text { font-size:var(--text-sm); color:var(--ink); line-height:1.8; margin-bottom:var(--sp-4); }
+.tst-card__author { display:flex; align-items:center; gap:var(--sp-3); }
+.tst-card__avatar { width:40px; height:40px; border-radius:50%; background:var(--blue); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700; flex-shrink:0; }
+.tst-card__name { font-weight:700; font-size:var(--text-sm); }
+.tst-card__role { font-size:var(--text-xs); color:var(--faint); }
+
+/* ===== FAQ ===== */
+.faq__list { max-width:800px; margin-inline:auto; display:flex; flex-direction:column; gap:var(--sp-3); }
+.faq-item { background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden; transition:border-color var(--transition),box-shadow var(--transition); }
+.faq-item[open] { border-color:var(--blue-tint-2); box-shadow:var(--shadow-md); }
+.faq-item summary { display:flex; align-items:center; justify-content:space-between; gap:var(--sp-4); padding:var(--sp-5) var(--sp-6); cursor:pointer; font-weight:700; font-size:var(--text-base); list-style:none; }
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-item summary:hover { color:var(--blue); }
+.faq-item__icon { flex-shrink:0; width:26px; height:26px; border-radius:50%; background:var(--blue-tint); color:var(--blue); display:flex; align-items:center; justify-content:center; font-size:18px; transition:transform var(--transition); }
+.faq-item[open] .faq-item__icon { transform:rotate(45deg); background:var(--blue); color:#fff; }
+.faq-item__answer { padding:0 var(--sp-6) var(--sp-5); color:var(--muted); }
+
+/* ===== ACCOUNT CTA ===== */
+.acct { }
+.acct__inner { background:linear-gradient(135deg,var(--blue) 0%,var(--blue-darker) 100%); border-radius:var(--r-2xl); padding:clamp(var(--sp-8),5vw,var(--sp-16)); color:#fff; display:flex; align-items:center; gap:var(--sp-10); position:relative; overflow:hidden; box-shadow:var(--shadow-lg); }
+.acct__inner::before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.12),transparent 55%); pointer-events:none; }
+.acct__text { position:relative; flex:1; }
+.acct__text h2 { font-size:var(--text-xl); margin-bottom:var(--sp-3); }
+.acct__text p { color:#cdd6f0; max-width:52ch; }
+.acct__cta { position:relative; flex-shrink:0; }
+
+/* ===== FOOTER ===== */
+footer { background:var(--blue-darker); color:#b9c2de; padding-block:var(--sp-16) var(--sp-8); }
+.footer__grid { display:grid; grid-template-columns:2fr 1fr 1fr 1.2fr; gap:var(--sp-10); margin-bottom:var(--sp-10); }
+.footer__brand img { height:52px; border-radius:var(--r-md); margin-bottom:var(--sp-3); }
+.footer__brand-name { font-size:var(--text-lg); font-weight:800; color:#fff; margin-bottom:var(--sp-2); }
+.footer__brand-desc { font-size:var(--text-sm); color:#9aa5c6; max-width:36ch; }
+.footer__col-title { font-size:var(--text-sm); font-weight:800; color:#fff; letter-spacing:.06em; margin-bottom:var(--sp-4); }
+.footer__links { display:flex; flex-direction:column; gap:var(--sp-3); }
+.footer__links a { font-size:var(--text-sm); color:#b9c2de; }
+.footer__links a:hover { color:#fff; }
+.footer__hours { display:flex; flex-direction:column; gap:var(--sp-3); }
+.footer__hours-row { display:flex; justify-content:space-between; gap:var(--sp-4); font-size:var(--text-sm); color:#b9c2de; }
+.footer__hours-row b { color:#9fb4ff; font-weight:700; white-space:nowrap; }
+.footer__bottom { border-top:1px solid rgba(255,255,255,.12); padding-top:var(--sp-6); display:flex; justify-content:space-between; gap:var(--sp-4); flex-wrap:wrap; font-size:var(--text-xs); color:#8791b3; }
+
+/* ===== FLOATING WA ===== */
+.wa-float { position:fixed; bottom:var(--sp-6); inset-inline-start:var(--sp-6); z-index:200; width:56px; height:56px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 20px rgba(37,211,102,.5); transition:transform var(--transition); }
+.wa-float:hover { transform:scale(1.1); }
+.wa-float svg { width:28px; height:28px; }
+
+/* ===== REVEAL ===== */
+.js .reveal { opacity:0; transform:translateY(22px); transition:opacity .6s ease, transform .6s ease; }
+.js .reveal.is-visible { opacity:1; transform:none; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width:960px) {
+  .hero__content { grid-template-columns:1fr; gap:var(--sp-10); }
+  .hero__card { order:-1; }
+  .method__grid { grid-template-columns:1fr; }
+  .why__grid { grid-template-columns:1fr 1fr; }
+  .tst__grid { grid-template-columns:1fr; }
+  .acct__inner { flex-direction:column; text-align:center; }
+  .footer__grid { grid-template-columns:1fr 1fr; gap:var(--sp-8); }
+  .nav__links { display:none; }
+  .nav__hamburger { display:flex; }
+  .topbar { display:none; }
+}
+@media (max-width:560px) {
+  .why__grid { grid-template-columns:1fr; }
+  .footer__grid { grid-template-columns:1fr; }
+  .footer__bottom { flex-direction:column; }
+}
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*::before,*::after { animation-duration:.001ms!important; transition-duration:.001ms!important; }
+  .js .reveal { opacity:1!important; transform:none!important; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">דלג לתוכן הראשי</a>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar__inner">
+    <span class="topbar__tag">מסחר חכם בשוק ההון האמריקאי</span>
+    <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer">‎+972-50-506-9531</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav" id="main-nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      <img src="./assets/logo.jpg" alt="עדי רדמי לוגו" width="46" height="46">
+      <span>
+        <span class="nav__logo-name">עדי רדמי</span><br>
+        <span class="nav__logo-sub">Trading Academy</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="#courses">הקורסים</a>
+      <a href="#method">שיטת ה-5%</a>
+      <a href="#why">למה אני</a>
+      <a href="#testimonials">לקוחות</a>
+      <a href="#faq">שאלות נפוצות</a>
+      <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer" class="btn btn--primary" style="padding:.55rem 1.4rem;">צור קשר</a>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="פתח תפריט"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#courses" onclick="closeMenu()">הקורסים</a>
+  <a href="#method" onclick="closeMenu()">שיטת ה-5%</a>
+  <a href="#why" onclick="closeMenu()">למה אני</a>
+  <a href="#testimonials" onclick="closeMenu()">לקוחות</a>
+  <a href="#faq" onclick="closeMenu()">שאלות נפוצות</a>
+  <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer">📱 וואטסאפ</a>
+</div>
+
+<!-- HERO -->
+<header class="hero" id="main">
+  <div class="hero__grid-lines"></div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="reveal">
+        <span class="hero__badge">ברוכים הבאים לאקדמיה</span>
+        <h1 class="hero__title">לומדים לסחור<br>בשיטת <span>ה-5%</span></h1>
+        <p class="hero__desc">האקדמיה של עדי רדמי ללימודי מסחר והשקעות בשוק ההון האמריקאי — שיטה מוכחת, ניהול סיכון חכם וליווי אישי לאורך כל הדרך.</p>
+        <div class="hero__actions">
+          <a href="#courses" class="btn btn--light">לצפייה בקורסים</a>
+          <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer" class="btn btn--wa">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            דברו איתי
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div><span class="hero__stat-num">5%</span><span class="hero__stat-label">יעד חודשי</span></div>
+          <div><span class="hero__stat-num">2</span><span class="hero__stat-label">מסלולי לימוד</span></div>
+          <div><span class="hero__stat-num">100%</span><span class="hero__stat-label">אונליין</span></div>
+        </div>
+      </div>
+      <div class="hero__card reveal">
+        <img src="./assets/logo.jpg" alt="עדי רדמי – Stock Market Trader" class="hero__card-logo" width="96" height="96">
+        <h3>מה תקבלו באקדמיה</h3>
+        <div class="hero__card-list">
+          <div class="hero__card-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>שיטת מסחר ברורה ומובנית</div>
+          <div class="hero__card-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>ניהול סיכון מקצועי</div>
+          <div class="hero__card-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>איתותים בזמן אמת</div>
+          <div class="hero__card-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>ליווי אישי וקהילה תומכת</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- COURSES -->
+<section class="section courses" id="courses">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">קורסים מומלצים</span>
+      <h2 class="section__title">בחרו את <span>מסלול הלימוד</span> שלכם</h2>
+      <p class="section__desc">שני מסלולים מקצועיים — קורס מסחר מעמיק או קבוצת איתותים חיה לחוזים עתידיים.</p>
+    </div>
+    <div class="courses__grid">
+
+      <article class="course-card reveal">
+        <div class="course-card__media">
+          <span class="course-card__chip">אופציות</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 20h.01"/><path d="M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg>
+        </div>
+        <div class="course-card__body">
+          <h3 class="course-card__title">קורס מסחר באופציות חצי-אוטומטי</h3>
+          <p class="course-card__desc">קורס מקיף שילמד אתכם לסחור באופציות בשוק ההון האמריקאי עם אסטרטגיה חצי-אוטומטית מוכחת — לצמצום טעויות אנוש ולעקביות.</p>
+          <div class="course-card__features">
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>אסטרטגיית אופציות מלאה</div>
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>שיעורי וידאו + חומר לימוד</div>
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>ליווי אישי ותמיכה שוטפת</div>
+          </div>
+          <a href="https://wa.me/972505069531?text=היי+עדי%2C+מעוניין+בקורס+מסחר+באופציות" target="_blank" rel="noopener noreferrer" class="btn btn--primary course-card__cta">פרטים והרשמה</a>
+        </div>
+      </article>
+
+      <article class="course-card reveal">
+        <div class="course-card__media">
+          <span class="course-card__chip course-card__chip--live">לייב יומי</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/><circle cx="18" cy="7" r="2.5"/></svg>
+        </div>
+        <div class="course-card__body">
+          <h3 class="course-card__title">קבוצת איתותים לחוזים עתידיים</h3>
+          <p class="course-card__desc">קבוצת וואטסאפ אקסקלוסיבית עם איתותי מסחר יומיים לחוזים עתידיים — כניסה, יציאה וסטופ לוס בזמן אמת, כולל ניתוח שוק יומי.</p>
+          <div class="course-card__features">
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>איתותים חיים בזמן אמת</div>
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>נקודות כניסה ויציאה מדויקות</div>
+            <div class="course-card__feature"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>קהילת סוחרים מקצועית</div>
+          </div>
+          <a href="https://wa.me/972505069531?text=היי+עדי%2C+מעוניין+בקבוצת+האיתותים+לחוזים+עתידיים" target="_blank" rel="noopener noreferrer" class="btn btn--primary course-card__cta">פרטים והצטרפות</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- METHOD -->
+<section class="section section--tint method" id="method">
+  <div class="container">
+    <div class="method__grid">
+      <div class="reveal">
+        <span class="eyebrow">הגישה שלי</span>
+        <h2 class="section__title"><span>שיטת ה-5%</span> — מסחר עם ראש קר</h2>
+        <p class="section__desc">יעד מציאותי של 5% בחודש, עם ניהול סיכון קפדני ואסטרטגיה ברורה. לא הימורים — מסחר מקצועי ומחושב.</p>
+        <div class="method__points">
+          <div class="method__point"><span class="method__point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><span><strong>ניהול סיכון חכם</strong><span>כל עסקה מחושבת מראש עם הגנה על ההון</span></span></div>
+          <div class="method__point"><span class="method__point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><span><strong>כניסות ויציאות מדויקות</strong><span>נקודות מוגדרות מראש, בלי רגש</span></span></div>
+          <div class="method__point"><span class="method__point-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span><span><strong>חצי-אוטומטי</strong><span>הטכנולוגיה עובדת, אתם מפקחים</span></span></div>
+        </div>
+      </div>
+      <div class="method__visual reveal">
+        <div class="method__num">5%</div>
+        <div class="method__num-label">יעד חודשי מציאותי ומוכח</div>
+        <div class="method__badges">
+          <div class="method__badge"><span>אופציות</span><b>קורס מסחר</b></div>
+          <div class="method__badge"><span>חוזים עתידיים</span><b>קבוצת איתותים</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section why" id="why">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">למה עדי רדמי</span>
+      <h2 class="section__title">מסחר שמבוסס על <span>ניסיון אמיתי</span></h2>
+      <p class="section__desc">לא תיאוריה — שיטות שנוסו ועובדות בשוק האמיתי, עם כסף אמיתי.</p>
+    </div>
+    <div class="why__grid">
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 9l-5 5-3-3-4 4"/></svg></div><h3>ניסיון שוק אמיתי</h3><p>מסחר יומי בשוק ההון האמריקאי בחשבונות מקצועיים — המידע נסמך על מסחר אמיתי.</p></div>
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div><h3>שיטה מובנית וחוזרת</h3><p>מתודולוגיה ברורה עם כללים, פילטרים וניהול סיכון מדויק בכל עסקה.</p></div>
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div><h3>לא לבד בדרך</h3><p>ליווי אישי, קהילה פעילה ואיתותים בזמן אמת — אתם אף פעם לא מנווטים לבד.</p></div>
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div><h3>אוטומציה חכמה</h3><p>השיטה החצי-אוטומטית מצמצמת טעויות אנוש ורגש — אתם מגדירים, המערכת מבצעת.</p></div>
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h3>שוק ההון האמריקאי</h3><p>התמחות בשוק הנזיל והעמוק בעולם — אופציות וחוזים עם נפחי מסחר עצומים.</p></div>
+      <div class="why-card reveal"><div class="why-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><h3>תוצאות שמדברות</h3><p>לקוחות מדווחים על שיפור עקבי לאחר יישום השיטה — בזכות משמעת וכלים נכונים.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section--tint testimonials" id="testimonials">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">מה אומרים הלקוחות</span>
+      <h2 class="section__title">סוחרים <span>שכבר משתמשים</span> בשיטה</h2>
+    </div>
+    <div class="tst__grid">
+      <div class="tst-card reveal"><div class="tst-card__stars">★★★★★</div><p class="tst-card__text">"הקורס של עדי שינה לי את הגישה למסחר. סוף סוף יש לי שיטה ברורה ולא רץ אחרי כל איתות בטלגרם."</p><div class="tst-card__author"><div class="tst-card__avatar">י</div><div><div class="tst-card__name">יוסי כ.</div><div class="tst-card__role">סוחר אופציות</div></div></div></div>
+      <div class="tst-card reveal"><div class="tst-card__stars">★★★★★</div><p class="tst-card__text">"קבוצת האיתותים שווה כל שקל. עדי מסביר כל כניסה ויציאה, לא רק שולח מספרים. לומד בכל יום."</p><div class="tst-card__author"><div class="tst-card__avatar">ר</div><div><div class="tst-card__name">רן מ.</div><div class="tst-card__role">חוזים עתידיים</div></div></div></div>
+      <div class="tst-card reveal"><div class="tst-card__stars">★★★★★</div><p class="tst-card__text">"התחלתי מאפס ואחרי 3 חודשים אני סוחר עצמאי. עדי זמין, מקצועי ומדריך בסבלנות."</p><div class="tst-card__author"><div class="tst-card__avatar">נ</div><div><div class="tst-card__name">נועה ל.</div><div class="tst-card__role">תלמידת קורס</div></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="section__head reveal">
+      <span class="eyebrow">שאלות נפוצות</span>
+      <h2 class="section__title">כל מה ש<span>חשוב לדעת</span></h2>
+    </div>
+    <div class="faq__list reveal">
+      <details class="faq-item" open><summary><span>למי מתאימה שיטת ה-5%?</span><span class="faq-item__icon" aria-hidden="true">+</span></summary><div class="faq-item__answer">השיטה מתאימה גם למתחילים וגם לסוחרים מנוסים. הלימוד מובנה צעד אחר צעד, כך שאין צורך בניסיון קודם כדי להתחיל.</div></details>
+      <details class="faq-item"><summary><span>האם צריך ידע מוקדם במסחר?</span><span class="faq-item__icon" aria-hidden="true">+</span></summary><div class="faq-item__answer">לא. הקורס מתחיל מהבסיס ומלווה אתכם עד לרמה שבה תוכלו לסחור באופן עצמאי.</div></details>
+      <details class="faq-item"><summary><span>מה ההבדל בין הקורס לקבוצת האיתותים?</span><span class="faq-item__icon" aria-hidden="true">+</span></summary><div class="faq-item__answer">הקורס מלמד אתכם את השיטה כדי לסחור עצמאית. קבוצת האיתותים מספקת איתותים יומיים לחוזים עתידיים בזמן אמת. אפשר להשתלב בשני המסלולים.</div></details>
+      <details class="faq-item"><summary><span>האם יש ליווי אישי?</span><span class="faq-item__icon" aria-hidden="true">+</span></summary><div class="faq-item__answer">כן. תקבלו ליווי אישי, קהילה פעילה ותמיכה שוטפת לאורך כל הדרך.</div></details>
+      <details class="faq-item"><summary><span>האם מובטח רווח?</span><span class="faq-item__icon" aria-hidden="true">+</span></summary><div class="faq-item__answer">לא. מסחר בשוק ההון כרוך בסיכון וכל השקעה עלולה להפסיד. שיטת ה-5% היא מתודולוגיה לניהול מסחר וסיכון, אך אין הבטחה לתשואה. אין באמור משום ייעוץ פיננסי.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ACCOUNT CTA -->
+<section class="section acct">
+  <div class="container">
+    <div class="acct__inner reveal">
+      <div class="acct__text">
+        <h2>עוד לא פתחתם חשבון מסחר?</h2>
+        <p>אין בעיה — זה חלק מהדרך. אלווה אתכם צעד-אחר-צעד גם בפתיחת חשבון אצל ברוקר מתאים, כדי שתתחילו לסחור בביטחון.</p>
+      </div>
+      <a href="https://wa.me/972505069531?text=היי+עדי%2C+עוד+אין+לי+חשבון+מסחר+ואשמח+להכוונה" target="_blank" rel="noopener noreferrer" class="btn btn--red acct__cta" style="padding:1rem 2rem;">
+        לפתיחת חשבון בליווי אישי
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="./assets/logo.jpg" alt="עדי רדמי לוגו" width="52" height="52" loading="lazy">
+        <div class="footer__brand-name">עדי רדמי</div>
+        <p class="footer__brand-desc">האקדמיה של שיטת ה-5% — מסחר חכם ומקצועי בשוק ההון האמריקאי.</p>
+      </div>
+      <div>
+        <div class="footer__col-title">ניווט</div>
+        <nav class="footer__links">
+          <a href="#courses">הקורסים</a>
+          <a href="#method">שיטת ה-5%</a>
+          <a href="#why">למה אני</a>
+          <a href="#faq">שאלות נפוצות</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">צור קשר</div>
+        <nav class="footer__links">
+          <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer">📱 וואטסאפ</a>
+          <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer">‎+972-50-506-9531</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">שעות מענה</div>
+        <!-- עדי: עדכן את השעות בהתאם לזמינות האמיתית שלך -->
+        <div class="footer__hours">
+          <div class="footer__hours-row"><span>ימים א׳–ה׳</span><b>9:00–18:00</b></div>
+          <div class="footer__hours-row"><span>יום ו׳</span><b>9:00–13:00</b></div>
+          <div class="footer__hours-row"><span>וואטסאפ</span><b>כל השבוע</b></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> עדי רדמי | שיטת ה-5%. כל הזכויות שמורות.</span>
+      <span>אין באמור משום ייעוץ פיננסי. מסחר בשוק ההון כרוך בסיכון.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/972505069531?text=היי+עדי%2C+רוצה+לשמוע+עוד+על+האקדמיה" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="שלח הודעת וואטסאפ">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+hamburger.addEventListener('click', () => mobileMenu.classList.toggle('is-open'));
+function closeMenu(){ mobileMenu.classList.remove('is-open'); }
+document.addEventListener('click', (e) => { if(!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) mobileMenu.classList.remove('is-open'); });
+
+const reveals = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((en) => { if(en.isIntersecting){ en.target.classList.add('is-visible'); obs.unobserve(en.target); } });
+  }, { threshold:.12 });
+  reveals.forEach(el => obs.observe(el));
+} else {
+  reveals.forEach(el => el.classList.add('is-visible'));
+}
+
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"EducationalOrganization",
+  "name":"האקדמיה של עדי רדמי | שיטת ה-5%",
+  "description":"לימודי מסחר והשקעות בשוק ההון האמריקאי — קורס אופציות חצי-אוטומטי וקבוצת איתותים לחוזים עתידיים.",
+  "url":"https://adiradmytrade.com/","logo":"https://adiradmytrade.com/assets/logo.jpg",
+  "telephone":"+972-50-506-9531","areaServed":"IL","availableLanguage":"he"
+}
+</script>
+
+</body>
+</html>
