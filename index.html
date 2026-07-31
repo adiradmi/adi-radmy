@@ -6,6 +6,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>עדי רדמי | שיטת ה-5% – מסחר חכם בבורסה</title>
 <meta name="description" content="לימודי מסחר והשקעות בשוק ההון האמריקאי. קורס מסחר באופציות חצי אוטומטי + קבוצת איתותים לחוזים עתידיים.">
+<meta name="theme-color" content="#081a12">
+<link rel="canonical" href="https://adiradmytrade.com/">
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="./assets/logo.jpg">
+<link rel="apple-touch-icon" href="./assets/logo.jpg">
+
+<!-- Open Graph (WhatsApp / Facebook sharing) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="עדי רדמי | שיטת ה-5%">
+<meta property="og:title" content="עדי רדמי | שיטת ה-5% – מסחר חכם בבורסה">
+<meta property="og:description" content="שיטה מוכחת למסחר מקצועי בשוק ההון האמריקאי — קורס אופציות חצי-אוטומטי + קבוצת איתותים לחוזים עתידיים, עם ניהול סיכון חכם.">
+<meta property="og:url" content="https://adiradmytrade.com/">
+<meta property="og:image" content="https://adiradmytrade.com/assets/logo.jpg">
+<meta property="og:image:alt" content="עדי רדמי – Stock Market Trader">
+<meta property="og:locale" content="he_IL">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="עדי רדמי | שיטת ה-5% – מסחר חכם בבורסה">
+<meta name="twitter:description" content="קורס מסחר באופציות חצי-אוטומטי + קבוצת איתותים לחוזים עתידיים בשוק ההון האמריקאי.">
+<meta name="twitter:image" content="https://adiradmytrade.com/assets/logo.jpg">
+
+<!-- Enable JS-only progressive enhancement (prevents content staying hidden if JS fails) -->
+<script>document.documentElement.classList.add('js');</script>
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -370,6 +395,16 @@ body::before {
   text-transform: uppercase;
   color: var(--gold-1);
   margin-bottom: var(--space-4);
+}
+.section__eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 2px;
+  vertical-align: middle;
+  margin-inline-end: var(--space-2);
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--gold-1), var(--gold-2));
 }
 .section__title {
   font-size: var(--text-2xl);
@@ -751,6 +786,62 @@ body::before {
   background: #1ebe5d;
 }
 
+/* ===== FAQ ===== */
+.faq {
+  background: linear-gradient(180deg, var(--color-surface) 0%, var(--color-bg) 100%);
+}
+.faq__list {
+  max-width: 780px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.faq-item {
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.faq-item[open] {
+  border-color: rgba(201,168,76,0.4);
+  box-shadow: var(--shadow-card);
+}
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-6) var(--space-8);
+  cursor: pointer;
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 700;
+  color: var(--color-text);
+  list-style: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--gold-2); }
+.faq-item__icon {
+  flex-shrink: 0;
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: var(--radius-full);
+  background: rgba(201,168,76,0.12);
+  border: 1px solid rgba(201,168,76,0.25);
+  color: var(--gold-2);
+  font-size: 20px; line-height: 1;
+  transition: transform var(--transition);
+}
+.faq-item[open] .faq-item__icon { transform: rotate(45deg); }
+.faq-item__answer {
+  padding: 0 var(--space-8) var(--space-6);
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  line-height: 1.9;
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: var(--color-surface);
@@ -839,14 +930,46 @@ footer {
 .mobile-menu a:last-child { border-bottom: none; }
 
 /* ===== SCROLL REVEAL ===== */
-.reveal {
+/* Only hide when JS is available, so content never stays invisible if JS fails to load */
+.js .reveal {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-.reveal.is-visible {
+.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ===== ACCESSIBILITY ===== */
+:focus-visible {
+  outline: 2px solid var(--gold-2);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+.skip-link {
+  position: absolute;
+  right: -9999px;
+  top: var(--space-2);
+  z-index: 300;
+  background: var(--gold-2);
+  color: var(--green-dark);
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+.skip-link:focus { right: var(--space-4); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  .js .reveal { opacity: 1 !important; transform: none !important; }
+  .testimonials__track { animation: none !important; }
 }
 
 /* ===== RESPONSIVE ===== */
@@ -875,6 +998,8 @@ footer {
 </head>
 <body>
 
+<a href="#main-content" class="skip-link">דלג לתוכן הראשי</a>
+
 <!-- NAV -->
 <nav class="nav" id="main-nav">
   <div class="nav__inner">
@@ -890,6 +1015,7 @@ footer {
       <a href="#products">המוצרים</a>
       <a href="#why">למה אני</a>
       <a href="#testimonials">לקוחות</a>
+      <a href="#faq">שאלות נפוצות</a>
       <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer" class="nav__cta">צור קשר</a>
     </div>
     <button class="nav__hamburger" id="hamburger" aria-label="פתח תפריט">
@@ -904,11 +1030,12 @@ footer {
   <a href="#products" onclick="closeMobileMenu()">המוצרים</a>
   <a href="#why" onclick="closeMobileMenu()">למה אני</a>
   <a href="#testimonials" onclick="closeMobileMenu()">לקוחות</a>
+  <a href="#faq" onclick="closeMobileMenu()">שאלות נפוצות</a>
   <a href="https://wa.me/972505069531" target="_blank" rel="noopener noreferrer">📱 וואטסאפ</a>
 </div>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="main-content">
   <div class="hero__bg"></div>
   <div class="container" style="width:100%">
     <div class="hero__content">
@@ -1056,7 +1183,7 @@ footer {
           <li class="product-card__feature">אסטרטגיית אופציות מוכחת</li>
           <li class="product-card__feature">מערכת כניסות ויציאות חצי-אוטומטית</li>
           <li class="product-card__feature">ניהול סיכון ופוזיציה</li>
-          <li class="product-card__feature">וידאו לקאחות + חומר לימוד מלא</li>
+          <li class="product-card__feature">שיעורי וידאו מוקלטים + חומר לימוד מלא</li>
           <li class="product-card__feature">ליווי אישי ותמיכה שוטפת</li>
         </ul>
         <a href="https://wa.me/972505069531?text=היי+עדי%2C+מעוניין+בקורס+מסחר+באופציות" target="_blank" rel="noopener noreferrer" class="product-card__cta">
@@ -1234,6 +1361,75 @@ footer {
 
 <div class="divider"></div>
 
+<!-- FAQ -->
+<section class="faq section" id="faq">
+  <div class="container">
+    <div class="section__header reveal">
+      <span class="section__eyebrow">שאלות נפוצות</span>
+      <h2 class="section__title">כל מה ש<span class="gold-text">חשוב לדעת</span></h2>
+      <p class="section__desc">ריכזנו את השאלות הנפוצות ביותר. לא מצאת תשובה? כתוב לי בוואטסאפ ואשמח לעזור.</p>
+    </div>
+    <div class="faq__list reveal">
+      <details class="faq-item" open>
+        <summary>
+          <span>למי מתאימה שיטת ה-5%?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          השיטה מתאימה גם למתחילים שרוצים ללמוד מסחר מהיסוד וגם לסוחרים מנוסים שמחפשים מתודולוגיה מסודרת עם ניהול סיכון. הלימוד מובנה, צעד אחר צעד, כך שאין צורך בניסיון קודם כדי להתחיל.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>האם צריך ידע מוקדם במסחר?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          לא. הקורס מתחיל מהבסיס ומלווה אותך עד לרמה שבה תוכל לסחור באופן עצמאי. תלמד את המושגים, האסטרטגיה, וניהול הסיכון — הכל בעברית ובגובה העיניים.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>מה ההבדל בין קורס האופציות לקבוצת האיתותים?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          <strong>קורס האופציות</strong> מלמד אותך את השיטה כדי שתסחור עצמאית — כולל אסטרטגיה חצי-אוטומטית וחומרי לימוד מלאים. <strong>קבוצת האיתותים</strong> היא קבוצת וואטסאפ עם איתותים יומיים לחוזים עתידיים בזמן אמת — כניסה, יציאה וסטופ לוס. אפשר להשתלב בשני המסלולים.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>כמה זמן ביום צריך להשקיע?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          הגישה החצי-אוטומטית נבנתה כדי לחסוך זמן — מגדירים מראש ומפקחים. רוב התלמידים מקדישים בין חצי שעה לשעתיים ביום, בהתאם למסלול ולרמת המעורבות הרצויה.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>האם יש ליווי אישי ותמיכה?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          כן. תקבל ליווי אישי, קהילה פעילה של סוחרים ותמיכה שוטפת. אתה אף פעם לא לבד בדרך — יש עם מי להתייעץ ולשאול לאורך כל הדרך.
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>
+          <span>האם מובטח רווח?</span>
+          <span class="faq-item__icon" aria-hidden="true">+</span>
+        </summary>
+        <div class="faq-item__answer">
+          לא. מסחר בשוק ההון כרוך בסיכון וכל השקעה עלולה להפסיד. שיטת ה-5% היא מתודולוגיה לניהול מסחר וסיכון בצורה מקצועית ומחושבת — אך אין ולא יכולה להיות הבטחה לתשואה. אין באמור משום ייעוץ פיננסי.
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
 <!-- CTA SECTION -->
 <section class="cta-section">
   <div class="container">
@@ -1264,7 +1460,7 @@ footer {
   <div class="container">
     <div class="footer__grid">
       <div class="footer__brand">
-        <img src="./assets/logo.jpg" alt="עדי רדמי לוגו" width="56" height="56">
+        <img src="./assets/logo.jpg" alt="עדי רדמי לוגו" width="56" height="56" loading="lazy">
         <div class="footer__brand-name">עדי רדמי</div>
         <p class="footer__brand-desc">שיטת ה-5% — מסחר חכם ומקצועי בשוק ההון האמריקאי. אופציות, חוזים עתידיים, וניהול סיכון מוכח.</p>
       </div>
@@ -1275,6 +1471,7 @@ footer {
           <a href="#products">המוצרים</a>
           <a href="#why">למה אני</a>
           <a href="#testimonials">לקוחות מרוצים</a>
+          <a href="#faq">שאלות נפוצות</a>
         </nav>
       </div>
       <div>
@@ -1286,7 +1483,7 @@ footer {
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2025 עדי רדמי | שיטת ה-5%. כל הזכויות שמורות.</span>
+      <span>© <span id="year">2026</span> עדי רדמי | שיטת ה-5%. כל הזכויות שמורות.</span>
       <span>אין באמור משום ייעוץ פיננסי. מסחר בשוק ההון כרוך בסיכון.</span>
     </div>
   </div>
@@ -1317,19 +1514,27 @@ document.addEventListener('click', (e) => {
   }
 });
 
-// Scroll reveal
+// Scroll reveal (with fallback: if IntersectionObserver is unavailable, show everything)
 const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => {
-        entry.target.classList.add('is-visible');
-      }, (Array.from(reveals).indexOf(entry.target) % 3) * 100);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-reveals.forEach(el => observer.observe(el));
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.classList.add('is-visible');
+        }, (Array.from(reveals).indexOf(entry.target) % 3) * 100);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+} else {
+  reveals.forEach(el => el.classList.add('is-visible'));
+}
+
+// Dynamic copyright year
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Nav scroll effect
 const nav = document.getElementById('main-nav');
@@ -1340,6 +1545,62 @@ window.addEventListener('scroll', () => {
     nav.style.background = 'rgba(8,26,18,0.92)';
   }
 });
+</script>
+
+<!-- Structured data: business profile -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "עדי רדמי | שיטת ה-5%",
+  "description": "לימודי מסחר והשקעות בשוק ההון האמריקאי — קורס מסחר באופציות חצי-אוטומטי וקבוצת איתותים לחוזים עתידיים.",
+  "url": "https://adiradmytrade.com/",
+  "logo": "https://adiradmytrade.com/assets/logo.jpg",
+  "image": "https://adiradmytrade.com/assets/logo.jpg",
+  "telephone": "+972-50-506-9531",
+  "areaServed": "IL",
+  "availableLanguage": "he"
+}
+</script>
+
+<!-- Structured data: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "למי מתאימה שיטת ה-5%?",
+      "acceptedAnswer": { "@type": "Answer", "text": "השיטה מתאימה גם למתחילים שרוצים ללמוד מסחר מהיסוד וגם לסוחרים מנוסים שמחפשים מתודולוגיה מסודרת עם ניהול סיכון. הלימוד מובנה, צעד אחר צעד, כך שאין צורך בניסיון קודם כדי להתחיל." }
+    },
+    {
+      "@type": "Question",
+      "name": "האם צריך ידע מוקדם במסחר?",
+      "acceptedAnswer": { "@type": "Answer", "text": "לא. הקורס מתחיל מהבסיס ומלווה אותך עד לרמה שבה תוכל לסחור באופן עצמאי, כולל המושגים, האסטרטגיה וניהול הסיכון." }
+    },
+    {
+      "@type": "Question",
+      "name": "מה ההבדל בין קורס האופציות לקבוצת האיתותים?",
+      "acceptedAnswer": { "@type": "Answer", "text": "קורס האופציות מלמד אותך את השיטה כדי לסחור עצמאית. קבוצת האיתותים היא קבוצת וואטסאפ עם איתותים יומיים לחוזים עתידיים בזמן אמת — כניסה, יציאה וסטופ לוס. אפשר להשתלב בשני המסלולים." }
+    },
+    {
+      "@type": "Question",
+      "name": "כמה זמן ביום צריך להשקיע?",
+      "acceptedAnswer": { "@type": "Answer", "text": "הגישה החצי-אוטומטית נבנתה כדי לחסוך זמן. רוב התלמידים מקדישים בין חצי שעה לשעתיים ביום, בהתאם למסלול." }
+    },
+    {
+      "@type": "Question",
+      "name": "האם יש ליווי אישי ותמיכה?",
+      "acceptedAnswer": { "@type": "Answer", "text": "כן. תקבל ליווי אישי, קהילה פעילה של סוחרים ותמיכה שוטפת לאורך כל הדרך." }
+    },
+    {
+      "@type": "Question",
+      "name": "האם מובטח רווח?",
+      "acceptedAnswer": { "@type": "Answer", "text": "לא. מסחר בשוק ההון כרוך בסיכון וכל השקעה עלולה להפסיד. שיטת ה-5% היא מתודולוגיה לניהול מסחר וסיכון, אך אין הבטחה לתשואה. אין באמור משום ייעוץ פיננסי." }
+    }
+  ]
+}
 </script>
 
 </body>
