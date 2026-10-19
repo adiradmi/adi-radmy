@@ -1,15 +1,15 @@
 ---
 name: humanizer
 description: >-
-  Rewrite text that reads as AI-generated or robotic so it sounds like a real
-  person wrote it — natural, warm, and varied — while keeping the meaning,
-  facts, and language intact. Use this whenever the user asks to "humanize",
-  "make this sound human", "make it less AI", "remove the AI tells", "make it
-  natural", or hands over a draft (an email, post, caption, landing-page copy,
-  bio, article, message) and wants it to sound more personal, less stiff, or
-  less like ChatGPT. Also use proactively when polishing marketing or social
-  copy (including Hebrew content) that came out sounding generic or templated.
-  Works in any language, including Hebrew.
+  Write and rewrite text so it sounds like a real person wrote it — natural,
+  clear, and varied — while keeping the meaning, facts, and language intact.
+  Use this for ANY text Claude writes for people to read, whether drafting it
+  from scratch or fixing a draft: social posts, captions, reel scripts, emails,
+  messages, website and landing-page copy, bios, articles, announcements,
+  documents. Apply it even when the user doesn't mention tone or style. Also
+  use whenever the user asks to "humanize", "make this sound human", "make it
+  less AI", or "make it natural". Works in any language, including Hebrew. Not
+  for code, commands, or raw data.
 ---
 
 # Humanizer
@@ -34,6 +34,20 @@ little mess. Your job is to put that back.
 So when you rewrite: read the draft out loud in your head, find the places
 where it sounds like a brochure or a press release, and make a person say it
 instead.
+
+## Writing from scratch vs. fixing a draft
+
+This skill covers two situations:
+
+- **You're writing the text yourself** (a post, an email, site copy, a
+  script). Write in this voice from the first draft rather than producing
+  generic text and fixing it afterwards. Before handing it over, do the
+  read-back in step 3 of the workflow. Don't announce that you "humanized" it;
+  the user just gets good writing.
+- **The user hands you a draft.** Follow "How much to change" below.
+
+Leave alone anything that has to stay exact: code, commands, quotes, legal
+wording, data, and text the user asked to keep verbatim.
 
 ## What to do
 
